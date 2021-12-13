@@ -1,3 +1,8 @@
+mkdir $1
+if [ $? -gt 0 ]; then
+	echo "Day $1 already exists"
+	exit 1
+fi
 mkdir -p $1/1 $1/2
 
 printf "package main\n\n" >> $1/1/main.go
