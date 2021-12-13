@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir $1
 if [ $? -gt 0 ]; then
 	echo "Day $1 already exists"
